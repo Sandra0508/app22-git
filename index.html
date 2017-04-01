@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/telefonoactual.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TELEFONO CELULAR</h1>
+<h1><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('telefonos','','imagenes/telefonoactual.jpg',1)"><img src="imagenes/historiauno.jpg" alt="telefonos" width="196" height="141" id="telefonos"></a></h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿que es el telefono celular?</h2>
+<p>Se muestra la definicion</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la telefonia celular</h2>
+<p>muestra antecedetes</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificacion de la telefonia celular</h2>
+<P>se muestra la clasificacion</P>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Conpañias que maneja la telefonia en mexico</h2>
+<p>companias</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>telefonos celulares del futuro </h2>
+<p>Muestra telefonos</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Dos</h4>
+<h4>Sandra Hernandez Esquivel</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Que es un Telefono celular</h1>
+
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Aparato que recibe y emite comunicaciones a larga distancia y esta conectado a una red telefonica</h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefono antiguo</h1>
+<div>
+<p>Este es uno de los primeros telefonos</p>
+<br>
+</div>
+<div>
+<img src="imagenes/telefonoantiguo.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefono actual</h1>
+<div>
+<p>Esta es un telefono cotidiano</p>
+<br>
+</div>
+<div>
+<img src="imagenes/telefonoactual.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHE</h4>
+</div>
+</div>
+</body>
+
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Historia de la telefonia celular</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Durante mucho tiempo Alexander Graham Bell fue considerado el inventor del teléfono, junto con Elisha Gray sin embargo Bell no fue el inventor de este aparato sino solamente el primero en patentarlo esto ocurrio en 1876 el 11 de junio de 2002 el Congreso de Estados Unidos aprobo la resolucion 269 por la que se reconocia que el inventor del telefono habia sido Antonio Meucci que lo llamo teletrofono y no Alexander Graham Bell en 1871 Meucci solo pudo por dificultades economicas presentar una breve descripcion de su invento pero no formalizar la patente ante la Oficina de Patentes de Estados unidos</h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>creador del telefono</h1>
+<div>
+<p>Alexander Graham Bell</p>
+<br>
+</div>
+<div>
+<img src="imagenes/creadortelefono.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>primeros telefonos</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/historiauno.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHE</h4>
+</div>
+</div>
+
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Clasificacion de la telefonia celular</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Gama Baja
+Son aquellos que poseen un uso muy limitado incluso pueden llegar a cumplir la funcion de realizar llamadas la pantalla de estos dispositivos carece de gran resolucion siendo tambien en algunos equipos monocromatica los celulares de de gama baja son muy recomendados para gente de avanzada edad como asi tambien para obreros que realizan tareas como carpintería plomerosEl costo es muy bajo y en algunos casos si lo adquirimos con alguna abono mensual viene de regalo
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>gama baja</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/gamabaja.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+Gama Media
+Este grupo es el mas comercializado debido a la buena relacion costo prestaciones por lo general se adquiere este tipo de moviles por el motivo de querer escuchar musica MP, poder personalizarlo con wallpapers ringtones temas o poder tomar fotografias a una calidad media entre otras funcionalidades
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>gama media</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/gamamedia.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+
+Gama Alta
+Celulares para un publico que sabe lo que quiere, grandes prestaciones tales como GPS Wifi Internet inalámbrico camara fotografica superior a 3MP con excelente calidad y pantallas de gran resolucion Sin duda son los celulares mas completos pero caros No recomendados para un usuario que realiza deportes o trabajos rudos ni mucho menos para quien recien se inicia en el mundo de los celulares</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>gama alta</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/gamaalta.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHE</h4>
+</div>
+</div>
+
+<div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Compañias que manejan la telefonia en mexico  </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Axtel
+<br>
+iusacell
+<br>
+movistar
+<br>
+nextel
+<br>
+telcel
+<br>
+unefon</h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Tipos de compañias</h1>
+<div>
+<p>Estas son algunas empresas del telefono</p>
+<br>
+</div>
+<div>
+<img src="imagenes/companias.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>empresas que se encargan del telefono</h1>
+<div>
+</div>
+<div>
+<img src="imagenes/companiastel.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHE</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> Telefonos celulares del futuro</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>1 Pantallas flexibles
+
+Pronto tendremos celulares que se doblan.
+Fabricantes como LG y Samsung han estado coqueteando con la idea desde hace ya un tiempo. Conforme las pantallas se hacen más y más grandes, vemos que hay un límite en el tamaño en el que es cómodo manejar un smartphone, especialmente.
+<br>
+2 Nuevas formas de autenticación
+
+Codigos PIN patrones de desbloqueo sensores de huellas abajo detras o al lado. Estos son los metodos mas comunes para autenticarnos en nuestro equipo
+<br>
+3 Baterías más duraderas
+
+Las baterías de los celulares del futuro van a ser más duraderas
+Pareciera que los usuarios nos rendimos ante la duracion de la batería de los actuales smartphones que estos tengan una autonomia de batería de mas de un día suele sorprendernos gratamente
+<br>
+4 Sensores 3D
+
+Project Tango es uno de los proyectos alternativos de Google  consiste en una tableta que tiene varias cámaras que le permiten analizar y entender su entorno esta tecnologia que por el momento no se encuentra disponible para los consumidores, podría ser el futuro de la realidad aumentada en los móviles. Además, esto permitiría a personas con discapacidad visual moverse por un espacio que no conoce, mediante comandos de voz.
+<br>
+5 Nuevos materiales
+
+El grafeno parece ser el proximo material a utilizar en el ambito de la electronica de consumol</h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefono flexible</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/telefonofutur.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefono transparente</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/telefonofuturo.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHE</h4>
+</div>
+</div>
+
+
+
+</body>
+</html>
